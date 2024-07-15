@@ -1,0 +1,197 @@
+{
+  "Header": {
+    "title": "VM EXIM International",
+    "paragraph": "To simplify global trade by offering innovative, cost-effective, and sustainable solutions that exceed our clients' expectations."
+  },
+  "About": {
+    "paragraph": "VM EXIM International is a premier export-import company dedicated to facilitating seamless global trade. With a commitment to excellence, innovation, and customer satisfaction, we connect markets and bridge continents through our comprehensive range of services. Our expertise spans multiple industries, ensuring that we meet the diverse needs of our clients with precision and reliability.",
+    "Why": [
+      "Global Reach",
+      "Expertise",
+      "Diverse Portfolio",
+      "Reliable Logistics"
+    ],
+    "Why2": [
+      "Customer-Centric",
+      "Competitive Pricing",
+      "Sustainable Practices",
+      "Innovation and Technology"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-large.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-large.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-large.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-large.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-large.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-large.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-large.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-large.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-large.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/10-large.jpg",
+      "smallImage": "img/portfolio/10-large.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/11-large.jpg",
+      "smallImage": "img/portfolio/11-large.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/12-large.jpg",
+      "smallImage": "img/portfolio/12-large.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-wordpress",
+      "name": "Import Services",
+      "text": "Sourcing and procurement of high-quality products from global markets. Handling customs clearance and documentation. Ensuring timely and secure delivery of goods."
+    },
+    {
+      "icon": "fa fa-cart-arrow-down",
+      "name": "Export Services",
+      "text": "Identifying international market opportunities for local product. Managing all export logistics and compliance requirements. Providing end-to-end support from shipment to final delivery."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "Logistics and Supply Chain Management",
+      "text": "Efficient transportation and warehousing solutions. Real-time tracking and monitoring of shipments. Inventory management and distribution services."
+    },
+    {
+      "icon": "fa fa-language",
+      "name": "Customs Brokerage",
+      "text": "Expert handling of customs regulations and procedures. Minimizing delays and ensuring compliance with international trade laws. Facilitating smooth customs clearance processes."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "Trade Consulting",
+      "text": "Market research and analysis to identify growth opportunities. Strategic planning and advisory services for global expansion. Risk management and mitigation strategies."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "H. NO B-5,  Word No1 Shakti Nagar,  Mandideep, Raisen, Madhya Pradesh",
+    "phone": "+91-8989-2100-90",
+    "email": " prof.ravitesh@gmail.com ",
+    "WhatsApp" : "+91 91-8989-2100-90",
+    "office": "+91-8989-2100-90"
+  },
+  "Features": {
+    "paragraph" : "VM EXIM International serves a diverse clientele across various industries.",
+    "details" : [
+      {
+        "icon": "fa fa-comments-o",
+        "title": "Manufacturing",
+        "text": "Supplying raw materials and components to manufacturers worldwide."
+      },
+      {
+        "icon": "fa fa-bullhorn",
+        "title": "Retail",
+        "text": "Facilitating the import and export of consumer goods for retailers."
+      },
+      {
+        "icon": "fa fa-group",
+        "title": "Agriculture",
+        "text": " Exporting agricultural products to international markets."
+      },
+      {
+        "icon": "fa fa-magic",
+        "title": "Technology",
+        "text": " Importing cutting-edge technology and equipment for businesses."
+      }
+  
+    ]
+  } 
+}
