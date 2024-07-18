@@ -6,12 +6,13 @@ const data = {
       'img/portfolio/01-large.jpg',
       'img/portfolio/02-large.jpg',
       'img/portfolio/03-large.jpg',
-      'img/portfolio/12-large.jpg',
     ],
     chilles: [
       'img/portfolio/04-large.jpg',
       'img/portfolio/05-large.jpg',
       'img/portfolio/06-large.jpg',
+      'img/portfolio/12-large.jpg',
+
     ],
     pomegranate: [
       'img/portfolio/07-large.jpg',
