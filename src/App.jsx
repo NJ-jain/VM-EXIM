@@ -24,7 +24,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{ overflowX: "hidden" , position: "relative" , width: "100vw" , height: "100vh"}}>
       <Navigation />
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
