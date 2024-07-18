@@ -12,6 +12,7 @@ import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import ImageTabs from "./components/tab";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -24,7 +25,7 @@ const App = () => {
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
-
+console.log(landingPageData, "landingPageData.categorize")
   return (
     <Router>
       <div style={{ overflowX: "hidden", position: "relative", width: "100vw", height: "100vh" }}>
@@ -33,9 +34,8 @@ const App = () => {
         <Features data={landingPageData.Features} />
         <About data={landingPageData.About} />
         <Services data={landingPageData.Services} />
-        <Gallery data={landingPageData.Gallery} />
-        {/* <Testimonials data={landingPageData.Testimonials} /> */}
-        {/* <Team data={landingPageData.Team} /> */}
+        {/* <Gallery data={landingPageData.Gallery} /> */}
+        <ImageTabs imageObject ={landingPageData.categorize}/>
         <Contact data={landingPageData.Contact} />
       </div>
     </Router>
