@@ -29,12 +29,14 @@ const data = {
 const Tab = ({ label, isActive, onClick }) => (
   <div
     style={{
-      marginRight: '15px',
       padding: '10px',
       cursor: 'pointer',
-      backgroundColor: isActive ? '#ddd' : '#f1f1f1',
+      backgroundColor: isActive ? '#6372ff' : '#f1f1f1',
       borderBottom: isActive ? 'none' : '1px solid #ccc',
       border: isActive ? '1px solid #ccc' : 'none',
+      color: isActive ? '#fff' : '#000',
+      textTransform: 'capitalize',
+      
     }}
     onClick={onClick}
   >
@@ -108,8 +110,13 @@ const GalleryTabs = () => {
   };
 
   return (
+    <div id='portfolio'>
+    <div className="section-title">
+    <h2 className='text-center'>Products</h2>
+  </div>
     <div>
-      <div style={{ display: 'flex', padding: '10px', backgroundColor: '#f1f1f1', borderBottom: '1px solid #ccc' }}>
+        
+      <div style={{ display: 'flex', padding: '10px', borderBottom: '1px solid #ccc' }}>
         {Object.keys(data.categorize).map((key) => (
           <Tab
             key={key}
@@ -138,6 +145,7 @@ const GalleryTabs = () => {
           onPrevious={handlePreviousImage}
         />
       )}
+    </div>
     </div>
   );
 };
