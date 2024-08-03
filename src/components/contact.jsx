@@ -18,14 +18,14 @@ export const Contact = (props) => {
                 <span>
                     <i className="fa fa-map-marker"></i> Address
                   </span>
-                  <button
+                  {/* <button
                     onClick={() =>
                       window.open(`https://maps.app.goo.gl/wQVJdpeLjK8vquVG8`, '_blank')
                     }
                     style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "inherit", textDecoration: "underline" }}
-                  >
+                  > */}
                     {props.data ? props.data.address : "loading"}
-                  </button>
+                  {/* </button> */}
                 </p>
               </div>
               <div className="contact-item">
