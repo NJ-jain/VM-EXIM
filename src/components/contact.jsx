@@ -1,7 +1,6 @@
 import React from "react";
 
 export const Contact = (props) => {
-
   return (
     <div>
       <div id="contact">
@@ -15,7 +14,7 @@ export const Contact = (props) => {
               <div className="contact-item">
                 <h3>Contact Info</h3>
                 <p>
-                <span>
+                  <span>
                     <i className="fa fa-map-marker"></i> Address
                   </span>
                   {/* <button
@@ -24,7 +23,7 @@ export const Contact = (props) => {
                     }
                     style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "inherit", textDecoration: "underline" }}
                   > */}
-                    {props.data ? props.data.address : "loading"}
+                  {props.data ? props.data.address : "loading"}
                   {/* </button> */}
                 </p>
               </div>
@@ -38,9 +37,11 @@ export const Contact = (props) => {
                     onClick={(e) => {
                       if (!/Mobi|Android/i.test(navigator.userAgent)) {
                         e.preventDefault();
-                        navigator.clipboard.writeText(props.data ? props.data.phone : "").then(() => {
-                          alert("Contact number copied to clipboard");
-                        });
+                        navigator.clipboard
+                          .writeText(props.data ? props.data.phone : "")
+                          .then(() => {
+                            alert("Contact number copied to clipboard");
+                          });
                       }
                     }}
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -50,16 +51,18 @@ export const Contact = (props) => {
                 </p>
               </div>
               <div className="contact-item">
-                <p
-                  onClick={() =>
-                    (window.location.href = `mailto:${props.data.email}`)
-                  }
-                  style={{ cursor: "pointer" }}
-                >
+                <p>
                   <span>
                     <i className="fa fa-envelope-o"></i> Email
                   </span>{" "}
-                  {props.data ? props.data.email : "loading"}
+                  <span
+                    onClick={() =>
+                      (window.location.href = `mailto:${props.data.email}`)
+                    }
+                    style={{ cursor: "pointer" }}
+                  >
+                    {props.data ? props.data.email : "loading"}
+                  </span>
                 </p>
               </div>
             </div>
@@ -71,20 +74,19 @@ export const Contact = (props) => {
                   <li>
                     {console.log(props.data)}
                     <a
-                    href={`https://wa.me/${
-                      props.data && props.data.WhatsApp
-                        ? props.data.WhatsApp.replace(/[^0-9]/g, "")
-                        : ""
-                    }`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
+                      href={`https://wa.me/${
+                        props.data && props.data.WhatsApp
+                          ? props.data.WhatsApp.replace(/[^0-9]/g, "")
+                          : ""
+                      }`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
                       <i className="fa fa-whatsapp"></i>
                     </a>
                   </li>
                   <li>
-                    {console.log(props.data)}
                     <a
                       href={props.data ? props.data.instagram : "/"}
                       target="_blank"
