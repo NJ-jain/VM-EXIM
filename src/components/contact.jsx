@@ -1,46 +1,7 @@
-import { useState } from "react";
-import emailjs from "emailjs-com";
 import React from "react";
 
-const initialState = {
-  name: "",
-  email: "",
-  message: "",
-};
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
-  };
-  const clearState = () => setState({ ...initialState });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(name, email, message);
-
-    {
-      /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
-    }
-
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        e.target,
-        "YOUR_PUBLIC_KEY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
   return (
     <div>
       <div id="contact">
@@ -54,10 +15,17 @@ export const Contact = (props) => {
               <div className="contact-item">
                 <h3>Contact Info</h3>
                 <p>
-                  <span>
+                <span>
                     <i className="fa fa-map-marker"></i> Address
                   </span>
-                  {props.data ? props.data.address : "loading"}
+                  <button
+                    onClick={() =>
+                      window.open(`https://maps.app.goo.gl/wQVJdpeLjK8vquVG8`, '_blank')
+                    }
+                    style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "inherit", textDecoration: "underline" }}
+                  >
+                    {props.data ? props.data.address : "loading"}
+                  </button>
                 </p>
               </div>
               <div className="contact-item">
@@ -65,11 +33,29 @@ export const Contact = (props) => {
                   <span>
                     <i className="fa fa-phone"></i> Phone
                   </span>{" "}
-                  {props.data ? props.data.phone : "loading"}
+                  <a
+                    href={`tel:${props.data ? props.data.phone : ""}`}
+                    onClick={(e) => {
+                      if (!/Mobi|Android/i.test(navigator.userAgent)) {
+                        e.preventDefault();
+                        navigator.clipboard.writeText(props.data ? props.data.phone : "").then(() => {
+                          alert("Contact number copied to clipboard");
+                        });
+                      }
+                    }}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {props.data ? props.data.phone : "loading"}
+                  </a>
                 </p>
               </div>
               <div className="contact-item">
-                <p>
+                <p
+                  onClick={() =>
+                    (window.location.href = `mailto:${props.data.email}`)
+                  }
+                  style={{ cursor: "pointer" }}
+                >
                   <span>
                     <i className="fa fa-envelope-o"></i> Email
                   </span>{" "}
@@ -83,17 +69,45 @@ export const Contact = (props) => {
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
+                    {console.log(props.data)}
+                    <a
+                    href={`https://wa.me/${
+                      props.data && props.data.WhatsApp
+                        ? props.data.WhatsApp.replace(/[^0-9]/g, "")
+                        : ""
+                    }`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                      <i className="fa fa-whatsapp"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
+                    {console.log(props.data)}
+                    <a
+                      href={props.data ? props.data.instagram : "/"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={props.data ? props.data.twitter : "/"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fa fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
+                    <a
+                      href={props.data ? props.data.youtube : "/"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fa fa-youtube"></i>
                     </a>
                   </li>

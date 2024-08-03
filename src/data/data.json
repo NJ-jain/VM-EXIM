@@ -170,11 +170,15 @@
     }
   ],
   "Contact": {
-    "address": "H. NO B-5,  Word No1 Shakti Nagar,  Mandideep, Raisen, Madhya Pradesh",
+    "address": "NH46, Vidya Nagar, Mandideep, Bhopal, Madhya Pradesh 462046",
     "phone": "+91-8989-2100-90",
-    "email": " prof.ravitesh@gmail.com ",
-    "WhatsApp" : "+91 91-8989-2100-90",
-    "office": "+91-8989-2100-90"
+    "email": "contact@vmexim.com",
+    "WhatsApp": "+918989210090", 
+    "office": "+91-8989-2100-90",
+    "facebook": "",
+    "twitter": "https://x.com/vm_exim",
+    "youtube": "https://www.youtube.com/@vmexim",
+    "instagram": "https://www.instagram.com/vmexim/"
   },
   "Features": {
     "paragraph" : "VM EXIM International serves a diverse clientele across various industries.",
