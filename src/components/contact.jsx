@@ -55,14 +55,14 @@ export const Contact = (props) => {
                   <span>
                     <i className="fa fa-envelope-o"></i> Email
                   </span>{" "}
-                  <span
+                  <div
                     onClick={() =>
                       (window.location.href = `mailto:${props.data.email}`)
                     }
                     style={{ cursor: "pointer" }}
                   >
                     {props.data ? props.data.email : "loading"}
-                  </span>
+                  </div>
                 </p>
               </div>
             </div>
